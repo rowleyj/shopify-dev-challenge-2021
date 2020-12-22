@@ -3,11 +3,11 @@
 
 ### Quick Description
 
-  - Nuxt.Js SSR to make a quick frontend for public and private image uploading
+  - Nuxt.Js server-side rendering (SSR) to make a quick frontend for public and private image uploading
   - User can upload images [locally] as either public or private
-  - Private images are secured via a password and each access is authenticated via jwt
+  - Private images are secured via a password and each access is authenticated via json webtoken (jwt)
 
-### Necessary Upgrades For A Prodcution Build
+### Necessary Upgrades For A Production Build
  - Seperate the api from Nuxt so that the frontend and backend logic are separated and modular
  - Use a database for Users and Images[meta] (preferably NoSQL for the unstructured metadata )
  - Use a Content Delivery Network (CDN) for actual delivery of the images - some of the popular options allow for granular access control which would revoke the need to verify a json web token with every request as this can be an expensive process
